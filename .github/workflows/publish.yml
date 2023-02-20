@@ -3,6 +3,8 @@ on:
   workflow_dispatch:
   push:
     branches: [ main ]
+    paths:
+    - 'tao.owl'
 
 jobs:
   generate-docs:
