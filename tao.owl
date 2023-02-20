@@ -16,7 +16,7 @@
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en">An ontology to describe annotations of text.</Literal>
+        <Literal xml:lang="en">An ontology to describe annotations of text, used by the [PubAnnotation web service](https://pubannotation.org).</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

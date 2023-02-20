@@ -5,7 +5,7 @@ ONTOLOGY_FILE="tao.owl"
 rm -rf docs/
 
 # Generate docs with widoco
-java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs -getOntologyMetadata -oops -rewriteAll -webVowl
+java -jar widoco.jar -ontFile $ONTOLOGY_FILE -outFolder docs -getOntologyMetadata -oops -rewriteAll -webVowl -noPlaceHolderText
 mv docs/index-en.html docs/index.html
 mv docs/OOPSevaluation docs/oops
 mv docs/oops/oopsEval.html docs/oops/index.html
@@ -22,3 +22,7 @@ ontospy gendocs -o docs/browse --type 2 --preflabel label --nobrowser docs/ontol
 
 # Add "Browse with Ontospy" button
 find docs/index.html -type f -exec sed -i "s/alt=\"Visualize with WebVowl\" \/><\/a><\/dd>/alt=\"Visualize with WebVowl\" \/><\/a>\n<a href=\"browse\" target=\"_blank\"><img src=\"https:\/\/img.shields.io\/badge\/Browse_with-Ontospy-orange.svg\" alt=\"Browse with Ontospy\" \/><\/a><\/dd>/g" {} +
+
+# Add "Evaluate with OOPS" button
+find docs/index.html -type f -exec sed -i "s/<!-- <dt>Evaluation:<\/dt><dd><a href=\"OOPSEvaluation\/oopsEval.html#/<dt>Evaluation:<\/dt><dd><a href=\"oops/g" {} +
+find docs/index.html -type f -exec sed -i "s/<\/dd> -->/<\/dd>/g" {} +
