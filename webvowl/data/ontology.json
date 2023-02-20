@@ -186,7 +186,7 @@
     },
     "domain" : "4",
     "subproperty" : [ "7" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "9"
   }, {
     "iri" : "http://pubannotation.org/ontology/tao.owl#begins_at",
