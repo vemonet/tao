@@ -10,7 +10,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "An ontology to describe annotations of text."
+    "@value" : "An ontology to describe annotations of text, used by the [PubAnnotation web service](https://pubannotation.org)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",

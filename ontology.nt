@@ -1,7 +1,7 @@
 <http://pubannotation.org/ontology/tao.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://pubannotation.org/ontology/tao.owl> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tao"@en .
 <http://pubannotation.org/ontology/tao.owl> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://pubannotation.org/ontology/tao.owl#" .
-<http://pubannotation.org/ontology/tao.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology to describe annotations of text."@en .
+<http://pubannotation.org/ontology/tao.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology to describe annotations of text, used by the [PubAnnotation web service](https://pubannotation.org)."@en .
 <http://pubannotation.org/ontology/tao.owl> <http://www.w3.org/2000/01/rdf-schema#label> "Text Annotation Ontology"@en .
 # 
 # 

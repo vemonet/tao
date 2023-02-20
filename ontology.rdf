@@ -10,7 +10,7 @@
     <owl:Ontology rdf:about="http://pubannotation.org/ontology/tao.owl">
         <vann:preferredNamespacePrefix xml:lang="en">tao</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://pubannotation.org/ontology/tao.owl#</vann:preferredNamespaceUri>
-        <rdfs:comment xml:lang="en">An ontology to describe annotations of text.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An ontology to describe annotations of text, used by the [PubAnnotation web service](https://pubannotation.org).</rdfs:comment>
         <rdfs:label xml:lang="en">Text Annotation Ontology</rdfs:label>
     </owl:Ontology>
     

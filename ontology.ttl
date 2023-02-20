@@ -9,7 +9,7 @@
 <http://pubannotation.org/ontology/tao.owl> rdf:type owl:Ontology ;
                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "tao"@en ;
                                              <http://purl.org/vocab/vann/preferredNamespaceUri> "http://pubannotation.org/ontology/tao.owl#" ;
-                                             rdfs:comment "An ontology to describe annotations of text."@en ;
+                                             rdfs:comment "An ontology to describe annotations of text, used by the [PubAnnotation web service](https://pubannotation.org)."@en ;
                                              rdfs:label "Text Annotation Ontology"@en .
 
 #################################################################

@@ -8,7 +8,7 @@
       "en" : "Text Annotation Ontology"
     },
     "comments" : {
-      "en" : "An ontology to describe annotations of text."
+      "en" : "An ontology to describe annotations of text, used by the [PubAnnotation web service](https://pubannotation.org)."
     },
     "other" : {
       "preferredNamespacePrefix" : [ {
