@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://pubannotation.org/ontology/tao.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://pubannotation.org/ontology/tao.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#context_entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#document_text"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#text_span"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#denoted_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#denotes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part_of"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#begins_at"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ends_at"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_value"/>
+    </Declaration>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#denoted_by"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#denoted_by"/>
+        <ObjectProperty IRI="#denotes"/>
+    </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#denoted_by"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#denotes"/>
+        <Class IRI="#text_span"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#part_of"/>
+        <Class IRI="#text_span"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#denotes"/>
+        <Class IRI="#context_entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#part_of"/>
+        <Class IRI="#document_text"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#begins_at"/>
+        <Class IRI="#text_span"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ends_at"/>
+        <Class IRI="#text_span"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_value"/>
+        <Class IRI="#text_span"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#begins_at"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ends_at"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#has_value"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#context_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A context_entity is an entity living a content talked by a document. A context_entity is referred to by a text span.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#context_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">context entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#document_text</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a body of text which is sourced from a document. It is defined as a one-dimensional sequence of characters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#document_text</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">document text</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#text_span</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a part of a document text. A text span is defined by specifying the document text which it belongs to, and the beginning and ending &quot;caret&quot; positins on the document text. Carets are positions between characters on the character sequence, e.g., the first character is located between the caret positions 0 and 1.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#text_span</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">text span</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
