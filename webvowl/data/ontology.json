@@ -1,0 +1,212 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://pubannotation.org/ontology/tao.owl" ],
+    "iri" : "http://pubannotation.org/ontology/tao.owl",
+    "labels" : {
+      "en" : "Text Annotation Ontology"
+    },
+    "comments" : {
+      "en" : "An ontology to describe annotations of text."
+    },
+    "other" : {
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "en",
+        "value" : "tao",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://pubannotation.org/ontology/tao.owl#",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://pubannotation.org/ontology/tao.owl#text_span",
+    "baseIri" : "http://pubannotation.org/ontology/tao.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "text_span",
+      "undefined" : "text span"
+    },
+    "comment" : {
+      "undefined" : "a part of a document text. A text span is defined by specifying the document text which it belongs to, and the beginning and ending \"caret\" positins on the document text. Carets are positions between characters on the character sequence, e.g., the first character is located between the caret positions 0 and 1."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://pubannotation.org/ontology/tao.owl#context_entity",
+    "baseIri" : "http://pubannotation.org/ontology/tao.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "context_entity",
+      "undefined" : "context entity"
+    },
+    "comment" : {
+      "undefined" : "A context_entity is an entity living a content talked by a document. A context_entity is referred to by a text span."
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://pubannotation.org/ontology/tao.owl#document_text",
+    "baseIri" : "http://pubannotation.org/ontology/tao.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "document_text",
+      "undefined" : "document text"
+    },
+    "comment" : {
+      "undefined" : "a body of text which is sourced from a document. It is defined as a one-dimensional sequence of characters."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://pubannotation.org/ontology/tao.owl#has_value",
+    "baseIri" : "http://pubannotation.org/ontology/tao.owl",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "has_value"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://pubannotation.org/ontology/tao.owl#part_of",
+    "baseIri" : "http://pubannotation.org/ontology/tao.owl",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "part_of"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://pubannotation.org/ontology/tao.owl#denoted_by",
+    "inverse" : "8",
+    "baseIri" : "http://pubannotation.org/ontology/tao.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "denoted_by"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "3",
+    "attributes" : [ "object", "inverse functional" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://pubannotation.org/ontology/tao.owl#ends_at",
+    "baseIri" : "http://pubannotation.org/ontology/tao.owl",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "ends_at"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "4",
+    "subproperty" : [ "7" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://pubannotation.org/ontology/tao.owl#begins_at",
+    "baseIri" : "http://pubannotation.org/ontology/tao.owl",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "begins_at"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://pubannotation.org/ontology/tao.owl#denotes",
+    "baseIri" : "http://pubannotation.org/ontology/tao.owl",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "denotes"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "8"
+  } ]
+}

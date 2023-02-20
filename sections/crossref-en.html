@@ -1,0 +1,279 @@
+<h2 id="crossreference" class="list">Cross-reference for Text Annotation Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Text Annotation Ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#context_entity"
+            title="http://pubannotation.org/ontology/tao.owl#context_entity">context entity</a>
+      </li>
+      <li>
+         <a href="#document_text"
+            title="http://pubannotation.org/ontology/tao.owl#document_text">document text</a>
+      </li>
+      <li>
+         <a href="#text_span"
+            title="http://pubannotation.org/ontology/tao.owl#text_span">text span</a>
+      </li>
+   </ul>
+   <div class="entity" id="context_entity">
+      <h3>context entity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://pubannotation.org/ontology/tao.owl#context_entity</p>
+      <div class="comment">
+         <span class="markdown">A context_entity is an entity living a content talked by a document. A context_entity is referred to by a text span.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#denotes" title="http://pubannotation.org/ontology/tao.owl#denotes">denotes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="document_text">
+      <h3>document text<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://pubannotation.org/ontology/tao.owl#document_text</p>
+      <div class="comment">
+         <span class="markdown">a body of text which is sourced from a document. It is defined as a one-dimensional sequence of characters.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#part_of" title="http://pubannotation.org/ontology/tao.owl#part_of">part of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="text_span">
+      <h3>text span<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://pubannotation.org/ontology/tao.owl#text_span</p>
+      <div class="comment">
+         <span class="markdown">a part of a document text. A text span is defined by specifying the document text which it belongs to, and the beginning and ending "caret" positins on the document text. Carets are positions between characters on the character sequence, e.g., the first character is located between the caret positions 0 and 1.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#begins_at"
+               title="http://pubannotation.org/ontology/tao.owl#begins_at">begins at</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#denotes" title="http://pubannotation.org/ontology/tao.owl#denotes">denotes</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ends_at" title="http://pubannotation.org/ontology/tao.owl#ends_at">ends at</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#has_value"
+               title="http://pubannotation.org/ontology/tao.owl#has_value">has value</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#part_of" title="http://pubannotation.org/ontology/tao.owl#part_of">part of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#denoted_by"
+            title="http://pubannotation.org/ontology/tao.owl#denoted_by">
+            <span>denoted by</span>
+         </a>
+      </li>
+      <li>
+         <a href="#denotes" title="http://pubannotation.org/ontology/tao.owl#denotes">
+            <span>denotes</span>
+         </a>
+      </li>
+      <li>
+         <a href="#part_of" title="http://pubannotation.org/ontology/tao.owl#part_of">
+            <span>part of</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="denoted_by">
+      <h3>denoted by<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://pubannotation.org/ontology/tao.owl#denoted_by</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> inverse functional</p>
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topObjectProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</a>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#denotes" title="http://pubannotation.org/ontology/tao.owl#denotes">denotes</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="denotes">
+      <h3>denotes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://pubannotation.org/ontology/tao.owl#denotes</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#text_span"
+                  title="http://pubannotation.org/ontology/tao.owl#text_span">text span</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#context_entity"
+                  title="http://pubannotation.org/ontology/tao.owl#context_entity">context entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#denoted_by"
+                  title="http://pubannotation.org/ontology/tao.owl#denoted_by">denoted by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="part_of">
+      <h3>part of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://pubannotation.org/ontology/tao.owl#part_of</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#text_span"
+                  title="http://pubannotation.org/ontology/tao.owl#text_span">text span</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#document_text"
+                  title="http://pubannotation.org/ontology/tao.owl#document_text">document text</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#begins_at"
+            title="http://pubannotation.org/ontology/tao.owl#begins_at">
+            <span>begins at</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ends_at" title="http://pubannotation.org/ontology/tao.owl#ends_at">
+            <span>ends at</span>
+         </a>
+      </li>
+      <li>
+         <a href="#has_value"
+            title="http://pubannotation.org/ontology/tao.owl#has_value">
+            <span>has value</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="begins_at">
+      <h3>begins at<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://pubannotation.org/ontology/tao.owl#begins_at</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#text_span"
+                  title="http://pubannotation.org/ontology/tao.owl#text_span">text span</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">non negative integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ends_at">
+      <h3>ends at<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://pubannotation.org/ontology/tao.owl#ends_at</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#text_span"
+                  title="http://pubannotation.org/ontology/tao.owl#text_span">text span</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">non negative integer</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="has_value">
+      <h3>has value<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://pubannotation.org/ontology/tao.owl#has_value</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#text_span"
+                  title="http://pubannotation.org/ontology/tao.owl#text_span">text span</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

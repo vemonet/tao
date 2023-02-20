@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://pubannotation.org/ontology/tao.owl#"
+     xml:base="http://pubannotation.org/ontology/tao.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://pubannotation.org/ontology/tao.owl">
+        <vann:preferredNamespacePrefix xml:lang="en">tao</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://pubannotation.org/ontology/tao.owl#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">An ontology to describe annotations of text.</rdfs:comment>
+        <rdfs:label xml:lang="en">Text Annotation Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://pubannotation.org/ontology/tao.owl#denoted_by -->
+
+
+    <owl:ObjectProperty rdf:about="http://pubannotation.org/ontology/tao.owl#denoted_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://pubannotation.org/ontology/tao.owl#denotes"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pubannotation.org/ontology/tao.owl#denotes -->
+
+
+    <owl:ObjectProperty rdf:about="http://pubannotation.org/ontology/tao.owl#denotes">
+        <rdfs:domain rdf:resource="http://pubannotation.org/ontology/tao.owl#text_span"/>
+        <rdfs:range rdf:resource="http://pubannotation.org/ontology/tao.owl#context_entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pubannotation.org/ontology/tao.owl#part_of -->
+
+
+    <owl:ObjectProperty rdf:about="http://pubannotation.org/ontology/tao.owl#part_of">
+        <rdfs:domain rdf:resource="http://pubannotation.org/ontology/tao.owl#text_span"/>
+        <rdfs:range rdf:resource="http://pubannotation.org/ontology/tao.owl#document_text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://pubannotation.org/ontology/tao.owl#begins_at -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pubannotation.org/ontology/tao.owl#begins_at">
+        <rdfs:domain rdf:resource="http://pubannotation.org/ontology/tao.owl#text_span"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pubannotation.org/ontology/tao.owl#ends_at -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pubannotation.org/ontology/tao.owl#ends_at">
+        <rdfs:domain rdf:resource="http://pubannotation.org/ontology/tao.owl#text_span"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pubannotation.org/ontology/tao.owl#has_value -->
+
+
+    <owl:DatatypeProperty rdf:about="http://pubannotation.org/ontology/tao.owl#has_value">
+        <rdfs:domain rdf:resource="http://pubannotation.org/ontology/tao.owl#text_span"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://pubannotation.org/ontology/tao.owl#context_entity -->
+
+
+    <owl:Class rdf:about="http://pubannotation.org/ontology/tao.owl#context_entity">
+        <rdfs:comment>A context_entity is an entity living a content talked by a document. A context_entity is referred to by a text span.</rdfs:comment>
+        <rdfs:label>context entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pubannotation.org/ontology/tao.owl#document_text -->
+
+
+    <owl:Class rdf:about="http://pubannotation.org/ontology/tao.owl#document_text">
+        <rdfs:comment>a body of text which is sourced from a document. It is defined as a one-dimensional sequence of characters.</rdfs:comment>
+        <rdfs:label>document text</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://pubannotation.org/ontology/tao.owl#text_span -->
+
+
+    <owl:Class rdf:about="http://pubannotation.org/ontology/tao.owl#text_span">
+        <rdfs:comment>a part of a document text. A text span is defined by specifying the document text which it belongs to, and the beginning and ending &quot;caret&quot; positins on the document text. Carets are positions between characters on the character sequence, e.g., the first character is located between the caret positions 0 and 1.</rdfs:comment>
+        <rdfs:label>text span</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

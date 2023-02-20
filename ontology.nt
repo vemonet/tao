@@ -1,0 +1,94 @@
+<http://pubannotation.org/ontology/tao.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://pubannotation.org/ontology/tao.owl> <http://purl.org/vocab/vann/preferredNamespacePrefix> "tao"@en .
+<http://pubannotation.org/ontology/tao.owl> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://pubannotation.org/ontology/tao.owl#" .
+<http://pubannotation.org/ontology/tao.owl> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology to describe annotations of text."@en .
+<http://pubannotation.org/ontology/tao.owl> <http://www.w3.org/2000/01/rdf-schema#label> "Text Annotation Ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://pubannotation.org/ontology/tao.owl#denoted_by
+<http://pubannotation.org/ontology/tao.owl#denoted_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://pubannotation.org/ontology/tao.owl#denoted_by> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://pubannotation.org/ontology/tao.owl#denoted_by> <http://www.w3.org/2002/07/owl#inverseOf> <http://pubannotation.org/ontology/tao.owl#denotes> .
+<http://pubannotation.org/ontology/tao.owl#denoted_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+# 
+# http://pubannotation.org/ontology/tao.owl#denotes
+<http://pubannotation.org/ontology/tao.owl#denotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://pubannotation.org/ontology/tao.owl#denotes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://pubannotation.org/ontology/tao.owl#text_span> .
+<http://pubannotation.org/ontology/tao.owl#denotes> <http://www.w3.org/2000/01/rdf-schema#range> <http://pubannotation.org/ontology/tao.owl#context_entity> .
+# 
+# http://pubannotation.org/ontology/tao.owl#part_of
+<http://pubannotation.org/ontology/tao.owl#part_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://pubannotation.org/ontology/tao.owl#part_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://pubannotation.org/ontology/tao.owl#text_span> .
+<http://pubannotation.org/ontology/tao.owl#part_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://pubannotation.org/ontology/tao.owl#document_text> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://pubannotation.org/ontology/tao.owl#begins_at
+<http://pubannotation.org/ontology/tao.owl#begins_at> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://pubannotation.org/ontology/tao.owl#begins_at> <http://www.w3.org/2000/01/rdf-schema#domain> <http://pubannotation.org/ontology/tao.owl#text_span> .
+<http://pubannotation.org/ontology/tao.owl#begins_at> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://pubannotation.org/ontology/tao.owl#ends_at
+<http://pubannotation.org/ontology/tao.owl#ends_at> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://pubannotation.org/ontology/tao.owl#ends_at> <http://www.w3.org/2000/01/rdf-schema#domain> <http://pubannotation.org/ontology/tao.owl#text_span> .
+<http://pubannotation.org/ontology/tao.owl#ends_at> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+# 
+# http://pubannotation.org/ontology/tao.owl#has_value
+<http://pubannotation.org/ontology/tao.owl#has_value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://pubannotation.org/ontology/tao.owl#has_value> <http://www.w3.org/2000/01/rdf-schema#domain> <http://pubannotation.org/ontology/tao.owl#text_span> .
+<http://pubannotation.org/ontology/tao.owl#has_value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://pubannotation.org/ontology/tao.owl#context_entity
+<http://pubannotation.org/ontology/tao.owl#context_entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://pubannotation.org/ontology/tao.owl#context_entity> <http://www.w3.org/2000/01/rdf-schema#comment> "A context_entity is an entity living a content talked by a document. A context_entity is referred to by a text span." .
+<http://pubannotation.org/ontology/tao.owl#context_entity> <http://www.w3.org/2000/01/rdf-schema#label> "context entity" .
+# 
+# http://pubannotation.org/ontology/tao.owl#document_text
+<http://pubannotation.org/ontology/tao.owl#document_text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://pubannotation.org/ontology/tao.owl#document_text> <http://www.w3.org/2000/01/rdf-schema#comment> "a body of text which is sourced from a document. It is defined as a one-dimensional sequence of characters." .
+<http://pubannotation.org/ontology/tao.owl#document_text> <http://www.w3.org/2000/01/rdf-schema#label> "document text" .
+# 
+# http://pubannotation.org/ontology/tao.owl#text_span
+<http://pubannotation.org/ontology/tao.owl#text_span> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://pubannotation.org/ontology/tao.owl#text_span> <http://www.w3.org/2000/01/rdf-schema#comment> "a part of a document text. A text span is defined by specifying the document text which it belongs to, and the beginning and ending \"caret\" positins on the document text. Carets are positions between characters on the character sequence, e.g., the first character is located between the caret positions 0 and 1." .
+<http://pubannotation.org/ontology/tao.owl#text_span> <http://www.w3.org/2000/01/rdf-schema#label> "text span" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
