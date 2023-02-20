@@ -7,8 +7,10 @@ on:
     - 'tao.owl'
 
 jobs:
-  generate-docs:
+  publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     strategy:
       matrix:
         python-version: [ "3.8" ]
@@ -34,7 +36,7 @@ jobs:
       run: |
         bash scripts/gen.sh
 
-    # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
+    # Docs: https://github.com/peaceiris/actions-gh-pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:

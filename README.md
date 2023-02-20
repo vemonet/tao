@@ -1,5 +1,7 @@
 # ✒️ Text Annotation Ontology
 
+[![Publish to GitHub Pages](https://github.com/vemonet/tao/actions/workflows/publish.yml/badge.svg)](https://github.com/vemonet/tao/actions/workflows/publish.yml)
+
 A repository to publish documentation for the [Text Annotation Ontology](http://pubannotation.org/ontology/tao.owl), published at http://pubannotation.org/ontology/tao.owl
 
 The documentation website hosted at [vemonet.github.io/tao](https://vemonet.github.io/tao) is automatically updated by a GitHub Action at every change to the ontology file.
