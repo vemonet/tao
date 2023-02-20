@@ -26,3 +26,6 @@ find docs/index.html -type f -exec sed -i "s/alt=\"Visualize with WebVowl\" \/><
 # Add "Evaluate with OOPS" button
 find docs/index.html -type f -exec sed -i "s/<!-- <dt>Evaluation:<\/dt><dd><a href=\"OOPSEvaluation\/oopsEval.html#/<dt>Evaluation:<\/dt><dd><a href=\"oops/g" {} +
 find docs/index.html -type f -exec sed -i "s/<\/dd> -->/<\/dd>/g" {} +
+
+# Add favicon
+find docs/index.html -type f -exec sed -i "s/<head>/<head>\n<link rel=\"icon\" type=\"image\/x-icon\" href=\"https:\/\/pubannotation.org\/favicon.ico\">/g" {} +
