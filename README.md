@@ -10,7 +10,17 @@ The original ontology is published at http://pubannotation.org/ontology/tao.owl.
 
 ## 📖 Generate the docs locally
 
-Make sure Java and python >3.8 are installed. We recommend to enable a python virtual environment.
+<details><summary>Make sure Java and python >3.8 are installed. We recommend to enable a python virtual environment.</summary>
+
+    Create the virtual environment:
+    ```bash
+    python -m venv .venv
+    ```
+    Activate the virtual environment:
+    ```bash
+    source .venv/bin/activate
+    ```
+</details>
 
 Install the dependencies:
 

@@ -10,6 +10,8 @@ mv docs/index-en.html docs/index.html
 mv docs/OOPSevaluation docs/oops
 mv docs/oops/oopsEval.html docs/oops/index.html
 
+# Generate JSON-LD context
+java -jar owl2jsonld.jar http://pubannotation.org/ontology/tao.owl > docs/context.jsonld
 
 # Generate docs with Ontospy
 mkdir -p docs/browse
@@ -29,3 +31,6 @@ find docs/index.html -type f -exec sed -i "s/<\/dd> -->/<\/dd>/g" {} +
 
 # Add favicon
 find docs/index.html -type f -exec sed -i "s/<head>/<head>\n<link rel=\"icon\" type=\"image\/x-icon\" href=\"https:\/\/pubannotation.org\/favicon.ico\">/g" {} +
+
+# Add JSON-LD Context button
+find docs/index.html -type f -exec sed -i "s/alt=\"TTL\" \/><\/a> <\/span><\/dd>/alt=\"TTL\" \/><\/a> <\/span>\n<span><a href=\"context.jsonld\" target=\"_blank\"><img src=\"https:\/\/img.shields.io\/badge\/Context-JSON_LD-blue.svg\" alt=\"JSON-LD context\" \/><\/a> <\/span>\n<\/dd>/g" {} +
