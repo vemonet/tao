@@ -1,0 +1,47 @@
+{
+  "@context" : {
+    "text_span" : {
+      "@id" : "http://pubannotation.org/ontology/tao.owl#text_span"
+    },
+    "begins_at" : {
+      "@id" : "http://pubannotation.org/ontology/tao.owl#begins_at",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "part_of" : {
+      "@id" : "http://pubannotation.org/ontology/tao.owl#part_of",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "ends_at" : {
+      "@id" : "http://pubannotation.org/ontology/tao.owl#ends_at",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "context_entity" : {
+      "@id" : "http://pubannotation.org/ontology/tao.owl#context_entity"
+    },
+    "document_text" : {
+      "@id" : "http://pubannotation.org/ontology/tao.owl#document_text"
+    },
+    "denotes" : {
+      "@id" : "http://pubannotation.org/ontology/tao.owl#denotes",
+      "@type" : "@id"
+    },
+    "denoted_by" : {
+      "@id" : "http://pubannotation.org/ontology/tao.owl#denoted_by",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "has_value" : {
+      "@id" : "http://pubannotation.org/ontology/tao.owl#has_value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
