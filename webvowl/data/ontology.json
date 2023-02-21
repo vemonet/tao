@@ -165,7 +165,7 @@
     },
     "superproperty" : [ "9" ],
     "domain" : "3",
-    "attributes" : [ "inverse functional", "object" ],
+    "attributes" : [ "object", "inverse functional" ],
     "id" : "7"
   }, {
     "iri" : "http://pubannotation.org/ontology/tao.owl#ends_at",
