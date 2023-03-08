@@ -2,7 +2,7 @@
 
 [![Publish to GitHub Pages](https://github.com/vemonet/tao/actions/workflows/publish.yml/badge.svg)](https://github.com/vemonet/tao/actions/workflows/publish.yml)
 
-A repository to publish **documentation for the [Text Annotation Ontology](http://pubannotation.org/ontology/tao.owl)**. 
+A repository to publish **documentation for the [Text Annotation Ontology](http://pubannotation.org/ontology/tao.owl)**.
 
 The original ontology is published at http://pubannotation.org/ontology/tao.owl. The version used to generate the documentation has been slightly modified with Protégé 5.5.0 to add ontology metadata (label, description, preferred prefix and namespace).
 
@@ -10,7 +10,7 @@ The original ontology is published at http://pubannotation.org/ontology/tao.owl.
 
 ## 📖 Generate the docs locally
 
-<details><summary>Make sure Java and python >3.8 are installed. We recommend to enable a python virtual environment.</summary>
+<details><summary>Make sure Java ~17 and python >=3.8 are installed. We recommend to enable a python virtual environment.</summary>
 
 Create the virtual environment:
 ```bash
@@ -29,10 +29,10 @@ Install the dependencies:
 ./scripts/install.sh
 ```
 
-Generate the docs:
+Build the docs:
 
 ```bash
-./scripts/gen.sh
+./scripts/build.sh
 ```
 
 Start a web server to check the generated docs:

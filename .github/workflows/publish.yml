@@ -30,9 +30,9 @@ jobs:
       run: |
         bash scripts/install.sh
 
-    - name: Generate docs
+    - name: Build docs
       run: |
-        bash scripts/gen.sh
+        bash scripts/build.sh
 
     # Docs: https://github.com/peaceiris/actions-gh-pages
     - name: Deploy to GitHub Pages
