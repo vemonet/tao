@@ -1,48 +1,61 @@
-name: Publish to GitHub Pages
+name: Update documentation website
 on:
-  workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  publish:
+
+  deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     strategy:
       matrix:
         python-version: [ "3.10" ]
 
     steps:
-    - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v4
-      with:
-        python-version: ${{ matrix.python-version }}
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
 
-    - uses: actions/setup-java@v3
-      with:
-        java-version: '17'
-        distribution: 'zulu'
+      - uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'zulu'
 
-    - name: Install dependencies
-      run: |
-        bash scripts/install.sh
+      - name: Install dependencies
+        run: |
+          bash scripts/install.sh
 
-    - name: Build docs
-      run: |
-        bash scripts/build.sh
+      - name: Build docs
+        run: |
+          bash scripts/build.sh
 
-    # Docs: https://github.com/peaceiris/actions-gh-pages
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        # Build output to publish to the `gh-pages` branch:
-        publish_dir: ./docs
-        # The following lines assign commit authorship to the official
-        # GH-Actions bot for deploys to `gh-pages` branch
-        # The GH actions bot is used by default if you didn't specify the two fields.
-        user_name: github-actions[bot]
-        user_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './docs'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
