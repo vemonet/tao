@@ -5,6 +5,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:vann="http://purl.org/vocab/vann/"
      ontologyIRI="http://pubannotation.org/ontology/tao.owl">
     <Prefix name="" IRI="http://pubannotation.org/ontology/tao.owl"/>
@@ -13,6 +14,7 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
