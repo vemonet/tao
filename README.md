@@ -1,12 +1,12 @@
 # ✒️ Text Annotation Ontology
 
-[![Publish to GitHub Pages](https://github.com/vemonet/tao/actions/workflows/publish.yml/badge.svg)](https://github.com/vemonet/tao/actions/workflows/publish.yml)
+[![Publish to GitHub Pages](https://github.com/pubannotation/tao/actions/workflows/publish.yml/badge.svg)](https://github.com/pubannotation/tao/actions/workflows/publish.yml)
 
 A repository to publish **documentation for the [Text Annotation Ontology](http://pubannotation.org/ontology/tao.owl)**.
 
 The original ontology is published at http://pubannotation.org/ontology/tao.owl. The version used to generate the documentation has been slightly modified with Protégé 5.5.0 to add ontology metadata (label, description, preferred prefix and namespace).
 
-♻️ The documentation website hosted at [vemonet.github.io/tao](https://vemonet.github.io/tao) is automatically updated by a GitHub Action at every change to the ontology file.
+♻️ The documentation website hosted at [pubannotation.github.io/tao](https://pubannotation.github.io/tao) is automatically updated by a GitHub Action at every change to the ontology file.
 
 ## 📖 Generate the docs locally
 

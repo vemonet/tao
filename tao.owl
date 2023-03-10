@@ -30,6 +30,10 @@
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
         <Literal>http://pubannotation.org/ontology/tao.owl#</Literal>
     </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <IRI>http://creativecommons.org/licenses/by/4.0/</IRI>
+    </Annotation>
     <Declaration>
         <Class IRI="#context_entity"/>
     </Declaration>
