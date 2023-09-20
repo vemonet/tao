@@ -2,9 +2,9 @@
 
 [![Update documentation website](https://github.com/vemonet/tao/actions/workflows/publish.yml/badge.svg)](https://github.com/vemonet/tao/actions/workflows/publish.yml)
 
-A repository to publish documentation for the **Text Annotation Ontology**, used by [pubannotation.org](http://pubannotation.org)
+A repository to publish documentation for the **Text Annotation Ontology** at [vemonet.github.io/tao](https://vemonet.github.io/tao), used by the [pubannotation.org](http://pubannotation.org) service.
 
-The original ontology was published at http://pubannotation.org/ontology/tao.owl. It has now disappeared. Good thing I cloned it here, seems like I am the official repository now 👀
+The original ontology was published at http://pubannotation.org/ontology/tao.owl, but it has now disappeared. Good thing I cloned it here! Seems like I am the official repository now 👀
 
 The ontology hosted on this repository has been slightly modified with Protégé 5.5.0 to add ontology metadata (license, label, description, preferred prefix and namespace). I contacted the original authors of the ontology by email to validate we could use the cc-by license for this ontology.
 
