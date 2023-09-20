@@ -1,12 +1,16 @@
 # ✒️ Text Annotation Ontology
 
-[![Publish to GitHub Pages](https://github.com/pubannotation/tao/actions/workflows/publish.yml/badge.svg)](https://github.com/pubannotation/tao/actions/workflows/publish.yml)
+[![Update documentation website](https://github.com/vemonet/tao/actions/workflows/publish.yml/badge.svg)](https://github.com/vemonet/tao/actions/workflows/publish.yml)
 
-A repository to publish **documentation for the [Text Annotation Ontology](http://pubannotation.org/ontology/tao.owl)**.
+A repository to publish documentation for the **Text Annotation Ontology**, used by [pubannotation.org](http://pubannotation.org)
 
-The original ontology is published at http://pubannotation.org/ontology/tao.owl. The version used to generate the documentation has been slightly modified with Protégé 5.5.0 to add ontology metadata (label, description, preferred prefix and namespace).
+The original ontology was published at http://pubannotation.org/ontology/tao.owl. It has now disappeared. Good thing I cloned it here, seems like I am the official repository now 👀
 
-♻️ The documentation website hosted at [pubannotation.github.io/tao](https://pubannotation.github.io/tao) is automatically updated by a GitHub Action at every change to the ontology file.
+The ontology hosted on this repository has been slightly modified with Protégé 5.5.0 to add ontology metadata (license, label, description, preferred prefix and namespace). I contacted the original authors of the ontology by email to validate we could use the cc-by license for this ontology.
+
+I wish I could send a PR to the original repository that was created at https://github.com/pubannotation/tao, but since the repository is empty GitHub prevents me from sending a PR.
+
+♻️ The documentation website hosted at [vemonet.github.io/tao](https://vemonet.github.io/tao) is automatically updated by a GitHub Action at every change to the ontology file.
 
 ## 📖 Generate the docs locally
 
@@ -35,7 +39,7 @@ Build the docs:
 ./scripts/build.sh
 ```
 
-Start a web server to check the generated docs:
+Start a web server to check the generated docs locally:
 
 ```bash
 ./scripts/start.sh
